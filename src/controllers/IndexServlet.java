@@ -37,12 +37,7 @@ public class IndexServlet extends HttpServlet {
 			throws ServletException, IOException {
 		EntityManager em = DBUtil.createEntityManager();
 
-		/*List<Message> messages = em.createNamedQuery("getAllMessages", Message.class).getResultList();
-		//response.getWriter().append(Integer.valueOf(messages.size()).toString());
 
-		em.close();
-
-		request.setAttribute("message", messages);*/
 		 int page = 1;
 	        try {
 	            page = Integer.parseInt(request.getParameter("page"));

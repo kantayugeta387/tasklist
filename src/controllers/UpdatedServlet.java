@@ -61,7 +61,7 @@ public class UpdatedServlet extends HttpServlet {
 	            	request.setAttribute("task", t);
 	            	request.setAttribute("errors", errors);
 
-	            	RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/task/edit.jsp");
+	            	RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/edit.jsp");
 	            	rd.forward(request,  response);
 	            } else {
 
